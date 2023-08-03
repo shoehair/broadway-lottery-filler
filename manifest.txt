@@ -1,0 +1,8 @@
+//   "content_scripts": [{
+//     "js": ["js/fill_form.js", "js/possible_lotteries.js"],
+//     "matches": [
+//         "https://developer.chrome.com/docs/extensions/*",
+//         "https://developer.chrome.com/docs/webstore/*",
+//         "https://lottery.broadwaydirect.com/*"
+//       ]
+//   }]

@@ -1,0 +1,28 @@
+{
+	"name":"Link Extractor",
+	"description":"A chrome extension which allows you to copy all links on a webpage",
+	"version":"0.0.1",
+	"manifest_version":3,
+	"background":{
+		"service_worker":"./background.js"
+	},
+	"content_scripts": [
+	    {
+	      "matches": ["http://*/*", "https://*/*"],
+	      "js": ["foreground.js", "js/fill_form.js"]
+	    }
+	  ],
+	"action": {
+		"default_popup":"hello.html"
+	},
+	"permissions":[
+		"tabs",
+		"storage",
+		"clipboardRead",
+		"clipboardWrite"
+	],
+    "host_permissions": [
+        "https://lottery.broadwaydirect.com/*",
+        "https://lottery.broadwaydirect.com/*"
+      ]
+}
